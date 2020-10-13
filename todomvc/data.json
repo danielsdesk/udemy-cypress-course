@@ -1,10 +1,4 @@
 {
-  "todos": [
-    {
-      "title": "wash dishes",
-      "completed": false,
-      "id": "4153426472"
-    }
-  ],
+  "todos": [],
   "accounts": []
 }
