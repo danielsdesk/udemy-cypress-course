@@ -3,37 +3,12 @@
     {
       "title": "buy milk",
       "completed": false,
-      "id": "3560661497"
+      "id": 1
     },
     {
       "title": "wash dishes",
       "completed": false,
-      "id": "5647971445"
-    },
-    {
-      "title": "clean windows",
-      "completed": false,
-      "id": "1420916243"
-    },
-    {
-      "title": "make bed",
-      "completed": false,
-      "id": "4076039626"
-    },
-    {
-      "title": "new todo",
-      "completed": false,
-      "id": "R33-Mxh"
-    },
-    {
-      "title": "new todo",
-      "completed": false,
-      "id": "r7IChzd"
-    },
-    {
-      "title": "new todo",
-      "completed": false,
-      "id": "qzbJDME"
+      "id": 2
     }
   ],
   "accounts": [
