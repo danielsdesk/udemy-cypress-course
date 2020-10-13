@@ -7,33 +7,43 @@ beforeEach( () => {
 
 });
 
-it('Checks text of todo item', () => {
+it.only('Checks text of todo item', () => {
 
   cy
     .get('.todo')
-    .should('contain.text', 'buy milk');
+    .then(item => {
+        expect(item).to.contain('buy milk');
+    });
   
 });
 
-it('Checks texts of all todo items', () => {
-
-  cy
-    .get('.todo');
-  
-});
-
-it('Has first todo item with text "wash dishes"', () => {
+it.only('Checks texts of all todo items', () => {
 
   cy
     .get('.todo')
+    .then( todos => {
+        expect(todos[0]).to.contain.text('buy milk');
+        expect(todos[1]).to.contain.text('wash dishes');
+        expect(todos[2]).to.contain.text('create todos list');
+    });
+  
+});
+
+it.only('Has first todo item with text "buy milk"', () => {
+
+  cy
+    .get('.todo')
+    .should('have.length', 3)
     .eq(0)
-    .should('contain.text', 'create todos list');
-  
+    .should('contain.text', 'buy milk');
 });
 
-it('Has first todo item with text "wash dishes" (solution 2)', () => {
+it.only('Has first todo item with text "buy milk" (solution 2)', () => {
 
   cy
-    .get('.todo');
+    .get('.todo')
+    .should( todos => {
+        expect(todos[0]).to.contain.text('buy milk');
+    });
   
 });
