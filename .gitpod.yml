@@ -8,7 +8,7 @@ tasks:
       rm /tmp/.npm-lock
     command: npm run start
   - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
-    command: npm run cy:open
+    command: npm run cy:open && npm run cy:open
 
 ports:
   - port: 6080
