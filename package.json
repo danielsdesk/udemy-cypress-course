@@ -4,8 +4,8 @@
   "description": "Cypress workshop for udemy course",
   "main": "index.js",
   "scripts": {
-    "cy:open": "cypress open",
-    "cy:run": "cypress run",
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run",
     "install:todomvc": "cd todomvc && npm install",
     "postinstall": "npm run install:todomvc",
     "start": "cd todomvc && npm start"
