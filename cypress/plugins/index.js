@@ -1,3 +1,7 @@
-module.exports = (on, config) => {
+const { resetDatabase } = require('../../todomvc/resetDatabase');
 
+module.exports = (on, config) => {
+    on('task', { 
+        resetDatabase 
+    });
 };

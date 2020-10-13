@@ -1,20 +1,4 @@
 {
-  "todos": [
-    {
-      "title": "buy milk",
-      "completed": false,
-      "id": 1
-    },
-    {
-      "title": "wash dishes",
-      "completed": false,
-      "id": 2
-    }
-  ],
-  "accounts": [
-    {
-      "email": "distance-damage.mzt3fjhb@mailosaur.io",
-      "password": "admin"
-    }
-  ]
+  "todos": [],
+  "accounts": []
 }
