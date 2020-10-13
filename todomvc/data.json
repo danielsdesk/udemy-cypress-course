@@ -1,4 +1,10 @@
 {
-  "todos": [],
+  "todos": [
+    {
+      "title": "buy milk",
+      "completed": false,
+      "id": 1
+    }
+  ],
   "accounts": []
 }
