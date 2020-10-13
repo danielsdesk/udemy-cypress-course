@@ -1,11 +1,16 @@
 
-it.only('creates a todo item via api', () => {
+it('creates a todo item via api', () => {
+    cy.request('POST', 'localhost:3000/todos', {
+        title: 'buy milk',
+        completed: false
+    });
 
 });
     
-describe('resetting app state before each test', () => {
+describe.only('resetting app state before each test', () => {
 
   beforeEach( () => {
+      cy.request('DELETE', 'localhost:3000/todos');
     
     cy
       .visit('localhost:3000');
