@@ -4,3 +4,5 @@ image:
 tasks:
   - init: npm install
     command: npm run start
+  - init: ./node_modules/.bin/cypress install
+    command: ./node_modules/.bin/cypress open
